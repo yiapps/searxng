@@ -16,10 +16,10 @@ search:
   # Existing autocomplete backends: "dbpedia", "duckduckgo", "google",
   # "startpage", "swisscows", "qwant", "wikipedia" - leave blank to turn it off
   # by default.
-  autocomplete: ""
+  autocomplete: "duckduckgo"
   # Default search language - leave blank to detect from browser information or
   # use codes from 'languages.py'
-  default_lang: ""
+  default_lang: "es"
   # Available languages
   # languages:
   #  - all
@@ -70,7 +70,7 @@ ui:
   # it decreases the privacy, since the browser can records the page titles.
   query_in_title: false
   # ui theme
-  default_theme: oscar
+  default_theme: simple
   # Default interface locale - leave blank to detect from browser information or
   # use codes from the 'locales' config section
   default_locale: ""
@@ -464,13 +464,13 @@ engines:
   - name: duckduckgo
     engine: duckduckgo
     shortcut: ddg
-    disabled: true
+    disabled: false
 
   - name: duckduckgo images
     engine: duckduckgo_images
     shortcut: ddi
     timeout: 3.0
-    disabled: true
+    disabled: false
 
   - name: etools
     engine: etools
@@ -1253,7 +1253,7 @@ engines:
     engine: startpage
     shortcut: sp
     timeout: 6.0
-    disabled: true
+    disabled: false
     additional_tests:
       rosebud: *test_rosebud
 
@@ -1341,7 +1341,7 @@ engines:
   - name: yahoo
     engine: yahoo
     shortcut: yh
-    disabled: true
+    disabled: false
 
   - name: yahoo news
     engine: yahoo_news
@@ -1365,6 +1365,7 @@ engines:
   - name: vimeo
     engine: vimeo
     shortcut: vm
+    disabled: true
 
   - name: wiby
     engine: json_engine
@@ -1627,7 +1628,7 @@ engines:
     base_url: https://rumble.com/
     paging: true
     categories: videos
-    disabled: true
+    disabled: false
 
   - name: wordnik
     engine: wordnik
