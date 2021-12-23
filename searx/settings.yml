@@ -259,7 +259,7 @@ engines:
     content_xpath: //div[@class="TEXT-BLOCK"]/ul/li
     categories: general
     timeout: 7.0
-    disabled: true
+    disabled: false
     shortcut: ai
     soft_max_redirects: 1
     about:
