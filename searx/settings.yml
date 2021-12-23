@@ -19,7 +19,7 @@ search:
   autocomplete: "duckduckgo"
   # Default search language - leave blank to detect from browser information or
   # use codes from 'languages.py'
-  default_lang: "es"
+  default_lang: "en-US"
   # Available languages
   # languages:
   #  - all
@@ -46,7 +46,7 @@ server:
   # If your instance owns a /etc/searxng/settings.yml file, then set the following
   # values there.
 
-  secret_key: "ultrasecretkey"  # change this!
+  secret_key: "thesecretkey"  # change this!
   # Proxying image results through searx
   image_proxy: false
   # 1.0 and 1.1 are supported
